@@ -123,7 +123,7 @@ curl -XGET 'localhost:9200/?pretty'
 CURL_RC=$?
 
 if [ ${CURL_RC} -ne 0 ]; then
-    echo " Elasticsearch falhou ${CURL_RC}"
+    echo " Elasticsearch falhou de forma miserável! ${CURL_RC}"
 else
     echo
     echo
