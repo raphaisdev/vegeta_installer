@@ -67,7 +67,7 @@ sudo dpkg -i elasticsearch-5.5.0.deb
 # ------------------------------------------------------------------------------------------- 
 sudo sed -i -e 's/-Xms2g/-Xms512m/g' /etc/elasticsearch/jvm.options
 sudo sed -i -e 's/-Xmx2g/-Xmx512m/g' /etc/elasticsearch/jvm.options
-sudo sed -i -e 's/#network.host: 127.0.0.1/network.host: 0.0.0.0/g' /etc/elasticsearch/elasticsearch.yml
+sudo sed -i -e 's/#network.host: 198.0.0.1/network.host: 0.0.0.0/g' /etc/elasticsearch/elasticsearch.yml
 sudo sed -i -e 's/#http.port: 9200/http.port: 9200/g' /etc/elasticsearch/elasticsearch.yml
 
 # -------------------------------------------------------------------------------------------
